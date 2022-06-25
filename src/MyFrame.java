@@ -21,8 +21,7 @@ JLabel dateLabel;
 String day;
 String time;
 String date;
-//Extra
-JLabel nameLabel;
+
     MyFrame() throws IOException, FontFormatException {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setTitle("Clock");
@@ -47,14 +46,10 @@ JLabel nameLabel;
         //date label
         dateLabel = new JLabel();
         dateLabel.setFont(new Font("Ink Free",Font.PLAIN,30));
-        //my name label
-        nameLabel = new JLabel();
-        nameLabel.setText("Made by Yazan");
 
         this.add(timeLabel); //to add label in the frame
         this.add(dayLabel);
         this.add(dateLabel);
-        this.add(nameLabel);
         //
         this.setVisible(true); // to pop out the window
         setTime(); //Method to refresh the frame each second
