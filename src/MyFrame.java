@@ -32,7 +32,7 @@ String date;
 
         //formatting due to documentation
         timeFormat = new SimpleDateFormat("hh:mm:ss a");
-        dayFormat = new SimpleDateFormat("E");
+        dayFormat = new SimpleDateFormat("E, ");
         dateFormat = new SimpleDateFormat("MMMM dd, yyyy");
         //time label
         timeLabel = new JLabel();
